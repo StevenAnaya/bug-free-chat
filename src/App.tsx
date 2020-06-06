@@ -1,20 +1,18 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
-import { StyledChatMessage } from 'components/ChatMessage';
+import Router from 'pages';
 
 import theme from 'theme';
 
 function App() {
 	return (
-		<ThemeProvider theme={theme}>
-			< StyledChatMessage>
-				hola mundo
-			</StyledChatMessage>
-			< StyledChatMessage isMine>
-				hola mundo AWADAWDAWDASDAW
-			</StyledChatMessage>
-		</ThemeProvider>
+		<BrowserRouter basename="/">
+			<ThemeProvider theme={theme}>
+				<Router />
+			</ThemeProvider>
+		</BrowserRouter>
 	);
 }
 
