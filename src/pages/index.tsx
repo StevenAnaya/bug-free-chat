@@ -13,7 +13,7 @@ const Router = () => {
 			</Route>
 			<Route path="/isMine" strict exact>
 				<StyledChatMessage isMine>
-					hola mundo AWADAWDAWDASDAW
+					hola mundo
 				</StyledChatMessage>
 			</Route>
 			<Route path="/" strict exact>
